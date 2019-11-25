@@ -1,0 +1,405 @@
+body{
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    background: #0c1d38;
+}
+
+#suelo {
+position:absolute;
+bottom: 0;
+background: #fff;    
+width: 100%;
+height: 100px;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 70%;
+    z-index: 2;
+
+}
+div.t{
+    background-color:midnightblue;
+}
+.t{
+    font-family: courier;
+    font-weight: 700;
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 25vw;
+    color:yellow;
+    font-size: 1.5vw;
+    z-index: 3;
+    animation-name:tt;
+    transition: 8s ease-in-out;
+}
+@keyframes tt{
+    0%{
+        transform: translateX(0);
+        opacity:0;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(100vw);
+        transform: translateY(70vw)
+    }
+}
+.snow {
+  position: absolute;
+  background-color: #eee;
+  top: 0;
+  border-radius: 50%;
+  animation-name: snowing;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 100%;
+    z-index: 5;
+}
+
+.snow-flake1 {
+  width: 12px;
+  height: 12px;
+  left: 5%;
+  animation-duration: 1.5s;
+}
+.snow-flake2 {
+  width: 6px;
+  height: 6px;
+  left: 15%;
+  animation-duration: 2.75s;
+}
+.snow-flake3 {
+  width: 8px;
+  height: 8px;
+  left: 25%;
+  animation-duration: 4.5s;
+}
+.snow-flake4 {
+  width: 12px;
+  height: 12px;
+  left: 30%;
+  animation-duration: 5s;
+}
+.snow-flake5 {
+  width: 11px;
+  height: 11px;
+  left: 35%;
+  animation-duration: 2.2s;
+}
+.snow-flake6 {
+  width: 8px;
+  height: 8px;
+  left: 45%;
+  animation-duration: 1.85s;
+}
+
+.snow-flake7 {
+  width: 5px;
+  height: 5px;
+  left: 55%;
+  animation-duration: 3.5s;
+}
+.snow-flake8 {
+  width: 7px;
+  height: 7px;
+  left: 60%;
+  animation-duration: 3.75s;
+}
+.snow-flake9 {
+  width: 9px;
+  height: 9px;
+  left: 65%;
+  animation-duration: 4.5s;
+}
+.snow-flake10 {
+  width: 11px;
+  height: 11px;
+  left: 75%;
+  animation-duration: 1.75s;
+}
+
+.snow-flake11 {
+  width: 12px;
+  height: 12px;
+  left: 80%;
+  animation-duration: 2.75s;
+}
+.snow-flake12 {
+  width: 6px;
+  height: 6px;
+  left: 85%;
+  animation-duration: 3.75s;
+}
+.snow-flake13 {
+  width: 8px;
+  height: 8px;
+  left: 90%;
+  animation-duration: 4.5s;
+}
+.snow-flake14 {
+  width: 12px;
+  height: 12px;
+  left: 95%;
+  animation-duration: 1.65s;
+}
+.snow-flake15 {
+  width: 11px;
+  height: 11px;
+  left: 100%;
+  animation-duration: 2.5s;
+}
+@keyframes snowing {
+  100% {
+    top: 90%;
+    opacity: 0.4;
+  }
+}
+
+.shadow {
+    margin-top: 50px;
+    font-family:courier;
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    color: #fff;
+    text-shadow: 0 4px 0 red, 1px 1px 1px green,
+        2px 2px 10px green,2px 2px 10px green;
+    animation: blinker 5s linear infinite;
+}
+@keyframes blinker{
+    50%{
+        opacity:0;
+    }
+}
+
+
+
+
+
+
+
+#santa{
+  margin-left: 5px;
+  width: 20%;
+  z-index: 1;
+    animation: san 15s linear infinite;
+
+
+}
+#santa img{
+    width: 15vw;
+    height: 15vw;
+}
+@keyframes san{
+  0%{
+      transform: translateX(0) translateY(0);
+  }
+  100%{
+      transform: translateX(450vh) translateY(-100vh);
+    }
+}
+
+.ces{
+    position: absolute;
+    left: 45%;
+    z-index: 1;
+    bottom: 7%;
+}
+.ces  img{
+   width: 100%;
+    height: 100%;
+    
+    
+}
+.f{
+    left: -18vh;
+    bottom: 53.5vh;
+    margin-top: 10%;
+    background-color: aliceblue;
+    color: red;
+    font-size: 3vh;
+    font-family: courier;
+    font-weight: 700;
+    position: absolute;
+    animation: letra 15s  linear infinite;
+     animation-delay: 0.8s;
+     text-shadow: 0 4px 0 yellow, 1px 1px 1px blue,
+        2px 2px 10px yellow,2px 2px 10px blue;
+    z-index: 1;
+   
+}
+
+@keyframes letra{
+    0%{
+
+        color:red;
+        transform: translateX() translateY(-100vh);
+        
+    }
+    25%{
+        color: green;
+
+    }
+    50%{
+        color:red;
+    }
+    75%{
+        color: green;
+    }
+    100%{
+        color:red;
+         transform: translateX(450vh) translateY(-100vh);
+    }
+}
+.arbol{
+    position: absolute;
+    left: 30%;
+    z-index: 3;
+    bottom: 7%;
+}
+.arbol2{
+    position: absolute;
+    left: 40%;
+    z-index: 3;
+    bottom: 7%;
+}
+.arbol3{
+    position: absolute;
+    left: 20%;
+    z-index: 3;
+    bottom: 7%;
+}
+
+.arbol  img{
+   width: 10vw;
+    height: 10vw;
+    
+    
+}
+.arbol2  img{
+   width: 10vw;
+    height: 10vw;
+    
+    
+}
+.arbol3  img{
+   width: 10vw;
+    height: 10vw;
+    
+    
+}
+.r1{
+    position: absolute;
+        left: 22%;
+    z-index: 3;
+    bottom: 7%;
+}
+.r2{
+    position: absolute;
+        left: 25%;
+    z-index: 3;
+    bottom: 7%;
+}
+.r3{
+    position: absolute;
+        left: 32%;
+    z-index: 3;
+    bottom: 7%;
+}
+.r4{
+    position: absolute;
+        left: 35%;
+    z-index: 3;
+    bottom: 7%;
+}
+.r5{
+    position: absolute;
+        left: 42%;
+    z-index: 3;
+    bottom: 7%;
+}
+.r6{
+    position: absolute;
+        left: 45%;
+    z-index: 3;
+    bottom: 7%;
+}
+.r1 img{
+    width: 3vw;
+    height: 3vw;
+}
+.r2 img{
+    width: 3vw;
+    height: 3vw;
+}
+.r3 img{
+    width: 3vw;
+    height: 3vw;
+}
+.r4 img{
+    width: 3vw;
+    height: 3vw;
+}
+.r5 img{
+    width: 3vw;
+    height: 3vw;
+}
+.r6 img{
+    width: 3vw;
+    height: 3vw;
+}
+ul{
+    list-style: none;
+    position: absolute;
+    bottom: 30%;
+    left: 45%;
+    width: 20%;
+    z-index: 2;
+    position: absolute;
+}
+
+
+li{
+    display: inline-block;
+    height: 15px;
+    width: 8px;
+    background-color: red;
+    border-radius: 100%;
+    margin: 0 10px;
+    animation: aa 1s infinite;
+}
+li:nth-child(even){
+    background-color:yellow;
+    animation: aa-even 1s infinite;
+}
+@keyframes aa{
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+       opacity: 1; 
+    }
+}
+@keyframes aa-even{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+       opacity: 0; 
+    }
+}
+
+.m{
+    position: absolute;
+    right: 27%;
+    z-index: 3;
+    bottom: 7%;
+    
+}
+.m img{
+    width: 10vw;
+    height: 10vw;
+}
+    
